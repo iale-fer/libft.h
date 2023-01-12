@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlamp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 19:00:17 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 19:00:41 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:05 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

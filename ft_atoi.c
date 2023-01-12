@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 15:43:42 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 15:43:43 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:14:49 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int	whitespaces(char *str, int *ptr_i)
 
 	i = 0;
 	count = 1;
-	while ((str[i] >= 9 && str[i] <= 13 ) || str[i] == 32)
+	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
 		i++;
 	while ((str[i] == 43 || str[i] == 45))
 	{
@@ -47,9 +47,4 @@ int	ft_atoi(char *str)
 	}
 	result *= sign;
 	return (result);
-}
-int main(void)
-{
-	char *s = "   --+010689EWF567";
-	printf("%d", ft_atoi(s));
 }

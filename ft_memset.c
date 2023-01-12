@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:34:25 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 16:34:27 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:15 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,59 +3,64 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:36:49 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 16:36:50 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:22 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-/* Esta función crea un contador el cual recorre la string, contando el número de secciones que tiene que debe de guardar 
-en la memoria de esta. *s es la string original, y c es el limitador de caracteres.*/
+/*This function creates a counter which runs through the 
+string, counting the number of sections it has to store in memory. 
+in the string's memory. *s is the original string, and c 
+is the character limiter.*/
 static size_t	ft_wordcounter(char const *s, char c)
 {
-	int a;
-	int b;
+	int	a;
+	int	b;
 
 	a = 0;
 	b = 0;
-	while(s[a] != '\0')
+	while (s[a] != '\0')
 	{
-		if(s[a] != c)
+		if (s[a] != c)
 		{
-			while(s[a] != '\0' && s[a] != c)
+			while (s[a] != '\0' && s[a] != c)
 				a++;
 				b++;
 		}
-		else a++;
+		else
+		a++;
 	}
-	return(b);
+	return (b);
 }
 
-/*Esta función recorrerá la cadena hasta que llege a nulo u al delimitador. 
-Comienza desde la posición del puntero que le asignes. Me retorna la dimensión 
-que tendrá que ocupar cada celda de memoria*/
+/*This function will traverse the string until it reaches 
+null or the delimiter. 
+It starts from the position of the pointer you assign to it. 
+It returns the dimension 
+that each memory cell will have to occupy.*/
 static size_t	ft_len(char const *s, char c)
 {
-	size_t len;
+	size_t	len;
 
 	len = 0;
-	while(*s != '\0' && *s != c)
+	while (*s != '\0' && *s != c)
 	{
 		len++;
 		s++;
 	}
-	return(len);
+	return (len);
 }
 
-/*Esta función a medida que recorre la string va liberando la memoria ocupada.*/
+/*As the function traverses the string, it frees the occupied memory.*/
 static void	ft_free(char **str)
 {
-	size_t a;
+	size_t	a;
 
 	a = 0;
-	while(str[a])
+	while (str[a])
 	{
 		free(str[a]);
 		a++;
@@ -63,9 +68,10 @@ static void	ft_free(char **str)
 	free(str);
 }
 
-/*Esta función se encarga de atravesar cada elemento de la cadena y comprobar que
-está correctamente guardado, así hasta llegar a nuestro delimitador o null. 
-En caso de que no sea así, se volverá a empezar*/
+/*This function is responsible for traversing each element of 
+the string and checking that it is correctly stored 
+that it is correctly stored, until it reaches our delimiter or null. 
+If this is not the case, it will start over again.*/
 static char	**ft_make_cells(char **str, char *s, char c)
 {
 	size_t	len;

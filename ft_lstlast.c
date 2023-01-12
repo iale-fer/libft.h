@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 18:56:02 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 18:56:35 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:06 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

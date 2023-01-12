@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:38:01 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 16:38:02 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:26 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

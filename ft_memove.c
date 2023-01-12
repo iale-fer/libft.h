@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memove.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:34:00 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 16:34:04 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:15 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,16 +35,4 @@ void	*ft_memmove(void *str1, const void *str2, size_t n)
 			*dest++ = *src++;
 	}
 	return (str1);
-}
-
-int main () 
-{
-	char dest[] = "antigua string";
-	const char src[]  ="nueva stringgg";
-
-	printf("Antes de que memmove dest = %s, src = %s\n", dest, src);
-	memmove(dest, src, 9);
-	printf("Después de que memmove dest = %s, src = %s\n", dest, src);
-
-	return(0);
 }

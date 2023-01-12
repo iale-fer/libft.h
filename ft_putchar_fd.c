@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:35:26 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 16:35:27 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:16 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

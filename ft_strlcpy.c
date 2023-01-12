@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:39:01 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 16:39:02 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:29 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	if (size)
 		dst[i] = '\0';
-	return ft_strlcpy;
+	return (ft_strlcpy);
 }

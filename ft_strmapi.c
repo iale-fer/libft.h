@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:39:32 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/11 16:39:33 by ivanalefern      ###   ########.fr       */
+/*   Updated: 2023/01/12 19:15:33 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

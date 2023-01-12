@@ -1,20 +1,30 @@
-/*Indicamos que ifndef es una libreria no definida en el código de C. El define indica que vamos a definirla.*/
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/01/12 19:13:18 by iale-fer          #+#    #+#             */
+/*   Updated: 2023/01/12 19:27:55 by iale-fer         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
-/*Son las librerías estándar de C*/
+/*C libraryes*/
 # include <stdlib.h>
 # include <string.h>
 # include <unistd.h>
 # include <stdio.h>
 
-/*Definimos una nueva estructura s_list, decimos que el contenido es void y que la estructura de s_list tira de la siguiente lista.*/
 typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;
 }					t_list;
 
-/*													¡PRIMERA PARTE DEL PROYECTO!															*/
+/*	FIRST PART OF PROYECT!*/
 
 /*Me dice si el caracter es alfabético*/
 int		ft_isalpha(int c);
@@ -43,7 +53,8 @@ int		ft_tolower(int c);
 /*Convierte la función en nulo*/
 void	ft_bzero(void *s, size_t n);
 
-/*La función memset copia el valor de c a cada uno de los primeros n caracteres en el objeto al cual señala s.*/
+/*La función memset copia el valor de c a cada uno de los 
+primeros n caracteres en el objeto al cual señala s.*/
 void	*ft_memset(void *b, int c, size_t len);
 
 /*Copia los primeros n caracteres del objeto apuntado por s2 a s1*/
@@ -52,7 +63,9 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 /*Copia los datos primero a un búfer intermedio, luego del búfer al destino. */
 void	*ft_memmove(void *dst, const void *src, size_t len);
 
-/*La función strcpy copia la cadena a la cual señala s2 (incluyendo el carácter nulo de terminación) al arreglo al cual señala s*/
+/*La función strcpy copia la cadena a la cual 
+señala s2 (incluyendo el carácter nulo de terminación) al arreglo 
+al cual señala s*/
 size_t	ft_strlcpy(char *dst,
 			const char *src,
 			size_t dstsize);
@@ -71,7 +84,8 @@ char	*ft_strrchr(const char *s, int c);
 /*Compara dos strings*/
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
-/*La función memchr devuelve un apuntador al caracter localizado, o un apuntador nulo si el carácter no existe en el objeto.*/
+/*La función memchr devuelve un apuntador al caracter 
+localizado, o un apuntador nulo si el carácter no existe en el objeto.*/
 void	*ft_memchr(const void *s, int c, size_t n);
 
 /*Compara los n caracteres de una cadena*/
@@ -80,16 +94,18 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 /**/
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 
-/*Devuelve un valor convertido, en función de la suma de signos '+' y '-' este será postivio o negativo*/
+/*Devuelve un valor convertido, en función de 
+la suma de signos '+' y '-' este será postivio o negativo*/
 int		ft_atoi(const char *str);
 
 /*Reserva un espacio de almacenamiento a una matriz*/
 void	*ft_calloc(size_t count, size_t size);
 
-/*Devuelve un puntero a una nueva cadena de caracteres que es un duplicado de la cadena apuntada por s*/
+/*Devuelve un puntero a una nueva cadena de 
+caracteres que es un duplicado de la cadena apuntada por s*/
 char	*ft_strdup(const char *s);
 
-/*													¡SEGUNDA PARTE DEL PROYECTO!																*/
+/*		SECOND PART OF THE PROYECT!		*/
 
 /**/
 char	*ft_substr(char const *s, unsigned int start, size_t len);
