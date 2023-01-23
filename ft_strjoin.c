@@ -6,7 +6,7 @@
 /*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:38:18 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/12 19:15:27 by iale-fer         ###   ########.fr       */
+/*   Updated: 2023/01/23 20:42:12 by iale-fer         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 
 	i = 0;
 	j = 0;
-	s = malloc(sizeof(char) + (ft_strlen(s1) + ft_strlen(s2) + 1));
+	s = malloc(sizeof(char) + (ft_strlen(s1) + ft_strlen(s2)));
 	if (!s)
 		return (NULL);
 	while (s1[i] != '\0')
