@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:43:12 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/12 19:15:39 by iale-fer         ###   ########.fr       */
+/*   Updated: 2023/01/23 19:57:28 by ivanalefern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int	ft_toupper(int b)
 {
 	if (b >= 'A' && b <= 'Z')
-	b -= 'A' - 'a';
+		return (b - ('A' - 'a'));
 	return (b);
 }

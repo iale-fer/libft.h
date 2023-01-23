@@ -3,37 +3,37 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 16:36:49 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/12 19:15:22 by iale-fer         ###   ########.fr       */
+/*   Updated: 2023/01/23 18:17:12 by ivanalefern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 /*This function creates a counter which runs through the 
 string, counting the number of sections it has to store in memory. 
 in the string's memory. *s is the original string, and c 
 is the character limiter.*/
 static size_t	ft_wordcounter(char const *s, char c)
 {
-	int	a;
-	int	b;
+	size_t	i;
+	size_t	w;
 
-	a = 0;
-	b = 0;
-	while (s[a] != '\0')
+	i = 0;
+	w = 0;
+	while (s[i] != '\0')
 	{
-		if (s[a] != c)
+		if (s[i] != c)
 		{
-			while (s[a] != '\0' && s[a] != c)
-				a++;
-				b++;
+			while (s[i] != '\0' && s[i] != c)
+				i++;
+			w++;
 		}
 		else
-		a++;
+			i++;
 	}
-	return (b);
+	return (w);
 }
 
 /*This function will traverse the string until it reaches 
@@ -48,8 +48,8 @@ static size_t	ft_len(char const *s, char c)
 	len = 0;
 	while (*s != '\0' && *s != c)
 	{
-		len++;
-		s++;
+				len++;
+				s++;
 	}
 	return (len);
 }
@@ -97,4 +97,23 @@ static char	**ft_make_cells(char **str, char *s, char c)
 	}
 	str[n] = NULL;
 	return (str);
+}
+
+/*
+We create the memory pool of type char **. Its size shall be char * and 
+the number of fragments it has calculated with the ft_wordcounter function
+plus 1 to consider the last cell to be null. 
+We check that it has been created correctly or we have been given the 
+string, otherwise it would be null. 
+Once everything is correct, in the return the main function will start 
+to fill each cell with its corresponding substring.
+*/
+char	**ft_split(char const *s, char c)
+{
+	char	**str;
+
+	str = (char **)malloc(sizeof(char *) * (ft_wordcounter(s, c) + 1));
+	if (!str || !s)
+		return (NULL);
+	return (ft_make_cells(str, (char *)s, c));
 }

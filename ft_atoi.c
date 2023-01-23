@@ -3,48 +3,38 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 15:43:42 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/12 19:14:49 by iale-fer         ###   ########.fr       */
+/*   Updated: 2023/01/23 16:51:40 by ivanalefern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	whitespaces(char *str, int *ptr_i)
+int	ft_atoi(const char *nptr)
 {
-	int	count;
 	int	i;
+	int	res;
+	int	sign;
 
 	i = 0;
-	count = 1;
-	while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
-		i++;
-	while ((str[i] == 43 || str[i] == 45))
+	res = 0;
+	sign = 1;
+	while (((nptr[i] >= 9 && nptr[i] <= 13) || nptr[i] == 32) && nptr[i])
 	{
-		if (str[i] == 45)
-			count *= -1;
 		i++;
 	}
-	*ptr_i = i;
-	return (count);
-}
-
-int	ft_atoi(char *str)
-{
-	int	sign;
-	int	result;
-	int	i;
-
-	result = 0;
-	sign = whitespaces(str, &i);
-	while (str[i] && str[i] >= 48 && str[i] <= 57)
+	if ('+' == nptr[i] || '-' == nptr[i])
 	{
-		result *= 10;
-		result += str[i] - 48;
+		if ('-' == nptr[i])
+			sign = -1;
 		i++;
 	}
-	result *= sign;
-	return (result);
+	while ('0' <= nptr[i] && '9' >= nptr[i])
+	{
+		res = res * 10 + ((nptr[i] - '0'));
+		i++;
+	}
+	return (sign * (res));
 }

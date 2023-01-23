@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/11 15:43:59 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/12 19:14:52 by iale-fer         ###   ########.fr       */
+/*   Updated: 2023/01/23 16:53:04 by ivanalefern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,5 @@
 
 int	ft_isalpha(int c)
 {
-	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
-	{
-		return (1);
-	}
-	else
-		return (0);
+	return (('a' <= c && c <= 'z') || ('A' <= c && c <= 'Z'));
 }

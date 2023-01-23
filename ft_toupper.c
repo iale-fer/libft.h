@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: iale-fer <iale-fer@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ivanalefernandez <ivanalefernandez@stud    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/11 16:43:38 by ivanalefern       #+#    #+#             */
-/*   Updated: 2023/01/12 19:15:40 by iale-fer         ###   ########.fr       */
+/*   Created: 2023/01/23 19:52:03 by ivanalefern       #+#    #+#             */
+/*   Updated: 2023/01/23 19:56:50 by ivanalefern      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
-int	ft_toupper(int b)
+int	ft_toupper(int a)
 {
-	if (b >= 'a' && b <= 'z')
-	b -= 'a' - 'A';
-	return (b);
+	if (a >= 'a' && a <= 'z')
+		return (a - ('a' - 'A'));
+	return (a);
 }
